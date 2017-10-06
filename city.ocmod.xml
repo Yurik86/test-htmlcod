@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>City</name>
+    <code>City</code>
+    <version>1.0</version>
+    <author>Yurik</author>
+    <link></link>
+
+    <file path="admin/view/template/common/menu.tpl">
+        <operation>
+            <search><![CDATA[
+             <li><a class="parent"><?php echo $text_return; ?></a>
+            ]]></search>
+            <add position="befor"><![CDATA[
+           <li><a href="<?php echo $city; ?>"><?php echo $text_city; ?></a></li>
+            ]]></add>
+        </operation>
+    </file>
+
+</modification>
